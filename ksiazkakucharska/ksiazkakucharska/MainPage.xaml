@@ -7,7 +7,35 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid BorderBrush="#FF7AB309" Background="#FFC8E888">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="9*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--<Button Name="HamburgerButton" FontSize="36" Content="&#xE700;" FontFamily="Segoe MDL2 Assets" Click="HamburgerButton_Click"></Button>-->
+        <!--<SplitView x:Name="mySplit" Grid.Row="1" DisplayMode="CompactOverlay" OpenPaneLength="200" CompactPaneLength="50" HorizontalAlignment="Left">
+            <SplitView.Pane>
+                <ListBox>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="36" Text="&#xE14c;" FontFamily="Segoe MDL2 Assets"></TextBlock>
+                            <TextBlock HorizontalAlignment="Right">opis</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="36" Text="&#xE14c;" FontFamily="Segoe MDL2 Assets"></TextBlock>
+                            <TextBlock HorizontalAlignment="Right">opis2</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Rectangle Fill="Red"></Rectangle>
+            </SplitView.Content>
+        </SplitView>-->
+        <TextBox Name="textbox1" Background="#FFC8E888" Width="20" Height="10" Grid.Row="1" BorderBrush="#FF7AB309" Text="tekst111" Foreground="#FF7AB309"></TextBox>
+        <TextBlock Name="nazwa" FontSize="12" Foreground="#FF7AB309" Text="labelka jakas" ></TextBlock>
+        <Button Name="przycisk" Grid.Row="1" FontSize="12" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="text" ></Button>
     </Grid>
 </Page>

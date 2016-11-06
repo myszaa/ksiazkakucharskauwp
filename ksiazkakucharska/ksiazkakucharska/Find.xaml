@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="ksiazkakucharska.Find"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ksiazkakucharska"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#c8e888">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Name="nazwa" Grid.Row="0" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Wyszukaj" ></TextBlock>
+        <TextBox Name="skladnik1" Background="#FFC8E888" Grid.Row="1" BorderBrush="#FF7AB309" Text="Składnik 1" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <TextBox Name="skladnik2" Background="#FFC8E888" Grid.Row="2" BorderBrush="#FF7AB309" Text="Składnik 2" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <Button Name="przycisk-" Grid.Row="3" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="-"  HorizontalAlignment="Left" VerticalAlignment="Center"></Button>
+        <Button Name="przycisk+" Grid.Row="3" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="+"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+        <Button Name="przycisk" Grid.Row="3" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Szukaj"  HorizontalAlignment="Right" VerticalAlignment="Center"></Button>
+    </Grid>
+</Page>
