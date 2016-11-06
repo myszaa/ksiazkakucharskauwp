@@ -13,7 +13,7 @@
             <RowDefinition Height="90*" />
         </Grid.RowDefinitions>
 
-        <Button x:Name="humburger_button" Content="&#xE700;" Background="#215E21" Foreground="#ffffcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="0" FontFamily="Segoe MDL2 Assets" Click="Button_Click"/>
+        <Button x:Name="HumburgerButton" Content="&#xE700;" Background="#215E21" Foreground="#ffffcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="0" FontFamily="Segoe MDL2 Assets" Click="Button_Click"/>
         <SplitView x:Name="HamburgerMenu" Grid.Row="1"  HorizontalAlignment="Stretch" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="300" >
             <SplitView.Pane>
                 <ListBox Background="#215E21" Foreground="#ffffcc">

@@ -17,20 +17,20 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
         
-        <TextBlock Name="add_title" Grid.Row="0" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Dodaj przepis" ></TextBlock>
-        <TextBox Name="component_1" Background="#FFC8E888" Grid.Row="1" BorderBrush="#FF7AB309" Text="Składnik 1" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
-        <TextBox Name="component_2" Background="#FFC8E888" Grid.Row="2" BorderBrush="#FF7AB309" Text="Składnik 2" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
-        <Grid Grid.Row="3" x:Name="buttons_row">
+        <TextBlock Name="AddTitle" Grid.Row="0" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Dodaj przepis" ></TextBlock>
+        <TextBox Name="Component1" Background="#FFC8E888" Grid.Row="1" BorderBrush="#FF7AB309" Text="Składnik 1" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <TextBox Name="Component2" Background="#FFC8E888" Grid.Row="2" BorderBrush="#FF7AB309" Text="Składnik 2" Foreground="#FF7AB309" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <Grid Grid.Row="3" x:Name="ButtonsRow">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Name="button_minus" Grid.Column="2" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="-"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
-            <Button Name="button_plus" Grid.Column="1" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="+"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Name="ButtonMinus" Grid.Column="2" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="-"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Name="ButtonPlus" Grid.Column="1" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="+"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
         </Grid>
-        <TextBox Name="description" Background="#FFC8E888" Grid.Row="4" BorderBrush="#FF7AB309" Text="Opis" Foreground="#FF7AB309" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></TextBox>
-        <Button Name="button_add" Grid.Row="5" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Dodaj przepis"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+        <TextBox Name="Description" Background="#FFC8E888" Grid.Row="4" BorderBrush="#FF7AB309" Text="Opis" Foreground="#FF7AB309" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></TextBox>
+        <Button Name="ButtonAdd" Grid.Row="5" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Dodaj przepis"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
     </Grid>
 </Page>
