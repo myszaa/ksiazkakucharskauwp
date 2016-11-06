@@ -9,33 +9,34 @@
 
     <Grid BorderBrush="#FF7AB309" Background="#FFC8E888">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="90*" />
         </Grid.RowDefinitions>
-        <!--<Button Name="HamburgerButton" FontSize="36" Content="&#xE700;" FontFamily="Segoe MDL2 Assets" Click="HamburgerButton_Click"></Button>-->
-        <!--<SplitView x:Name="mySplit" Grid.Row="1" DisplayMode="CompactOverlay" OpenPaneLength="200" CompactPaneLength="50" HorizontalAlignment="Left">
+
+        <Button x:Name="humburger_button" Content="&#xE700;" Background="#215E21" Foreground="#ffffcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="0" FontFamily="Segoe MDL2 Assets" Click="Button_Click"/>
+        <SplitView x:Name="HamburgerMenu" Grid.Row="1"  HorizontalAlignment="Stretch" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="300" >
             <SplitView.Pane>
-                <ListBox>
+                <ListBox Background="#215E21" Foreground="#ffffcc">
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="36" Text="&#xE14c;" FontFamily="Segoe MDL2 Assets"></TextBlock>
-                            <TextBlock HorizontalAlignment="Right">opis</TextBlock>
+                            <TextBlock Text="&#xE094;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
+                            <TextBlock Text=" Wyszukaj" FontSize="36"></TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="36" Text="&#xE14c;" FontFamily="Segoe MDL2 Assets"></TextBlock>
-                            <TextBlock HorizontalAlignment="Right">opis2</TextBlock>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="&#xE104;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
+                            <TextBlock Text=" Dodaj przepis" FontSize="36"></TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Rectangle Fill="Red"></Rectangle>
+                <!-- W tym miejscu powinno się wyświetlać zawartość danej formatki          -->
+                <Frame x:Name="ContentFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1"></Frame>
+
             </SplitView.Content>
-        </SplitView>-->
-        <TextBox Name="textbox1" Background="#FFC8E888" Width="20" Height="10" Grid.Row="1" BorderBrush="#FF7AB309" Text="tekst111" Foreground="#FF7AB309"></TextBox>
-        <TextBlock Name="nazwa" FontSize="12" Foreground="#FF7AB309" Text="labelka jakas" ></TextBlock>
-        <Button Name="przycisk" Grid.Row="1" FontSize="12" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="text" ></Button>
+        </SplitView>
+
     </Grid>
 </Page>
