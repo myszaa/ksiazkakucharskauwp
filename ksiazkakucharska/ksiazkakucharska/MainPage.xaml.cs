@@ -56,17 +56,20 @@ namespace ksiazkakucharska
 
         private void RecipeDetailsStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Assets.RecipeDetails));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Assets.RecipeDetails));
+            else ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
         private void SettingsStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Assets.Settings));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Assets.Settings));
+            else ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
         private void ResultsStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Assets.Results));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Assets.Results));
+            else ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
     }
