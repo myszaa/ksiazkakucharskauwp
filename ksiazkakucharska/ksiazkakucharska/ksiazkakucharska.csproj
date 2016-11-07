@@ -97,6 +97,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Assets\Add.xaml.cs" />
+    <Compile Include="Assets\ChangeEmail.xaml.cs">
+      <DependentUpon>ChangeEmail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Assets\Find.xaml.cs" />
     <Compile Include="Assets\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -139,6 +142,10 @@
     <Page Include="Assets\Add.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\ChangeEmail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Assets\Find.xaml">
       <Generator>MSBuild:Compile</Generator>
