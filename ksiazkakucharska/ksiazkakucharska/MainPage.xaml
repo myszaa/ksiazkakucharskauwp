@@ -29,6 +29,12 @@
                             <TextBlock Text=" Dodaj przepis" FontSize="36"></TextBlock>
                         </StackPanel>
                     </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel x:Name="LoginStackPanel" Orientation="Horizontal" Tapped="LoginStackPanel_Tapped">
+                            <TextBlock Text="&#xE1E2;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
+                            <TextBlock Text=" Logowanie" FontSize="36"></TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>

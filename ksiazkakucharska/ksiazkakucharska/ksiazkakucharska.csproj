@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +98,9 @@
     </Compile>
     <Compile Include="Assets\Add.xaml.cs" />
     <Compile Include="Assets\Find.xaml.cs" />
+    <Compile Include="Assets\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Assets\RecipeDetails.xaml.cs">
       <DependentUpon>RecipeDetails.xaml</DependentUpon>
     </Compile>
@@ -133,6 +137,10 @@
     <Page Include="Assets\Find.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Assets\RecipeDetails.xaml">
       <SubType>Designer</SubType>
