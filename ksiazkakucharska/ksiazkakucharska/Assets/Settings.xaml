@@ -31,7 +31,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Name="ButtonLogout" Grid.Row="0" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Wyloguj"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Click="ButtonLogout_Click" Name="ButtonLogout" Grid.Row="0" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Wyloguj"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
         </Grid>
     </Grid>
 </Page>
