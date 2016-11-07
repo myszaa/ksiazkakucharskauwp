@@ -18,13 +18,13 @@
             <SplitView.Pane>
                 <ListBox Background="#215E21" Foreground="#ffffcc">
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel x:Name="FindStackPanel" Orientation="Horizontal" Tapped="FindStackPanel_Tapped">
                             <TextBlock Text="&#xE094;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
                             <TextBlock Text=" Wyszukaj" FontSize="36"></TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
-                        <StackPanel Orientation="Horizontal" >
+                        <StackPanel x:Name="AddStackPanel" Orientation="Horizontal" Tapped="AddStackPanel_Tapped">
                             <TextBlock Text="&#xE104;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
                             <TextBlock Text=" Dodaj przepis" FontSize="36"></TextBlock>
                         </StackPanel>

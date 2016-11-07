@@ -31,5 +31,17 @@ namespace ksiazkakucharska
         {
             HamburgerMenu.IsPaneOpen = !HamburgerMenu.IsPaneOpen;
         }
+
+        private void FindStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(Find));
+            HamburgerMenu.IsPaneOpen = !HamburgerMenu.IsPaneOpen;
+        }
+
+        private void AddStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(Add));
+            HamburgerMenu.IsPaneOpen = !HamburgerMenu.IsPaneOpen;
+        }
     }
 }
