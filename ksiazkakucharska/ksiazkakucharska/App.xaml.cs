@@ -22,6 +22,8 @@ namespace ksiazkakucharska
     /// </summary>
     sealed partial class App : Application
     {
+        public static string LoginToken { get; set; }
+        public static Windows.Storage.ApplicationDataContainer LocalSettings { get; set; }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -30,6 +32,8 @@ namespace ksiazkakucharska
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            LocalSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            LoginToken = (string) LocalSettings.Values["LoginToken"];
         }
 
         /// <summary>

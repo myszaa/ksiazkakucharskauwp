@@ -18,6 +18,8 @@
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <TextBlock Name="LoginTitle" Grid.Row="0" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Logowanie" ></TextBlock>
@@ -40,12 +42,18 @@
             <PasswordBox x:Name="Password" Background="#FFC8E888" Grid.Column="1" BorderBrush="#FF7AB309" Password="password" Foreground="#FF7AB309"  HorizontalAlignment="Stretch" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
 
         </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Click="LoginButton_Click" Content="Zaloguj się" Name="LoginButton" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF7AB309" Foreground="#FFC8E888"></Button>
+        </Grid>
 
 <!-- rejestracja-->
 
 
-        <TextBlock Name="RegistryTitle" Grid.Row="4" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Rejestracja" ></TextBlock>
-        <Grid Grid.Row="5">
+        <TextBlock Name="RegistryTitle" Grid.Row="5" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Rejestracja" ></TextBlock>
+        <Grid Grid.Row="6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -54,7 +62,7 @@
             <TextBlock Name="RegistryEmailText" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="E-mail:" ></TextBlock>
             <TextBox Name="RegistryEmail" Background="#FFC8E888" Grid.Column="1" BorderBrush="#FF7AB309" Text="email@mail.pl" Foreground="#FF7AB309" HorizontalAlignment="Stretch" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"></TextBox>
         </Grid>
-        <Grid Grid.Row="6">
+        <Grid Grid.Row="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -63,7 +71,7 @@
             <TextBlock Name="RegistryNickText" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Nazwa użytkownika:" ></TextBlock>
             <TextBox Name="RegistryNick" Background="#FFC8E888" Grid.Column="1" BorderBrush="#FF7AB309" Text="Nick" Foreground="#FF7AB309" HorizontalAlignment="Stretch" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" />
         </Grid>
-        <Grid Grid.Row="7">
+        <Grid Grid.Row="8">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -73,7 +81,7 @@
             <PasswordBox x:Name="RegistryPassword" Background="#FFC8E888" Grid.Column="1" BorderBrush="#FF7AB309" Password="password" Foreground="#FF7AB309"  HorizontalAlignment="Stretch" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
 
         </Grid>
-        <Grid Grid.Row="8">
+        <Grid Grid.Row="9">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -81,6 +89,12 @@
             </Grid.ColumnDefinitions>
             <TextBlock Name="RegistryPasswordConfirmText" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Potwierdź hasło:" ></TextBlock>
             <PasswordBox x:Name="RegistryPasswordConfirm" Background="#FFC8E888" Grid.Column="1" BorderBrush="#FF7AB309" Password="password" Foreground="#FF7AB309"  HorizontalAlignment="Stretch" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+        </Grid>
+        <Grid Grid.Row="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Click="RegisterButton_Click" Content="Utwórz konto" Name="RegisterButton" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF7AB309" Foreground="#FFC8E888"></Button>
         </Grid>
         
         <!--/rejestracja-->

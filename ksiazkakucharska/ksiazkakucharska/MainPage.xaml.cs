@@ -25,7 +25,8 @@ namespace ksiazkakucharska
         public MainPage()
         {
             this.InitializeComponent();
-            ContentFrame.Navigate(typeof(Find));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Find));
+            else ContentFrame.Navigate(typeof(Assets.Login));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -35,13 +36,15 @@ namespace ksiazkakucharska
 
         private void FindStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Find));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Find));
+            else ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
 
         private void AddStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Add));
+            if (App.LoginToken != null) ContentFrame.Navigate(typeof(Add));
+            else ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
 
