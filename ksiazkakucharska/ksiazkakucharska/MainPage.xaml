@@ -13,7 +13,7 @@
             <RowDefinition Height="90*" />
         </Grid.RowDefinitions>
 
-        <Button x:Name="HumburgerButton" Content="&#xE700;" Background="#215E21" Foreground="#ffffcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="0" FontFamily="Segoe MDL2 Assets" Click="Button_Click"/>
+        <Button x:Name="HumburgerButton" FontSize="30" Content="&#xE700;" Background="#215E21" Foreground="#ffffcc" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="0" FontFamily="Segoe MDL2 Assets" Click="Button_Click"/>
         <SplitView x:Name="HamburgerMenu" Grid.Row="1"  HorizontalAlignment="Stretch" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="300" >
             <SplitView.Pane>
                 <ListBox Background="#215E21" Foreground="#ffffcc">
@@ -33,6 +33,12 @@
                         <StackPanel x:Name="LoginStackPanel" Orientation="Horizontal" Tapped="LoginStackPanel_Tapped">
                             <TextBlock Text="&#xE1E2;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
                             <TextBlock Text=" Logowanie" FontSize="36"></TextBlock>
+                        </StackPanel>                        
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel x:Name="SettingsStackPanel" Orientation="Horizontal" Tapped="SettingsStackPanel_Tapped">
+                            <TextBlock Text="&#xE713;" FontFamily="Segoe MDL2 Assets" FontSize="36"></TextBlock>
+                            <TextBlock Text="Ustawienia" FontSize="36"></TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

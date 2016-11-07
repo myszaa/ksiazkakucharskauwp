@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="ksiazkakucharska.Assets.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ksiazkakucharska.Assets"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#c8e888">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" x:Name="ButtonsRow1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="ButtonChangeNick" Grid.Row="1" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień nick"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Name="ButtonChangePassword" Grid.Row="2" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień hasło"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Name="ButtonEmail" Grid.Row="3" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień email"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+        </Grid>
+        <Grid Grid.Row="1" x:Name="ButtonsRow2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="ButtonLogout" Grid.Row="0" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Wyloguj"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+        </Grid>
+    </Grid>
+</Page>
