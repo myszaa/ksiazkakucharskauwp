@@ -7,7 +7,47 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#c8e888" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="StoreLogo.png"></Image>
+        <TextBlock Name="RecipeTitle" Grid.Row="1" FontSize="28" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Nazwa przepisu" ></TextBlock>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Name="ComponentsText" Grid.Row="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Składniki:" ></TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="Component1" Grid.Column="0" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Składnik 1" ></TextBlock>
+                <TextBlock Name="Mass1" Grid.Column="1" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="1L" ></TextBlock>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="Component2" Grid.Column="0" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Składnik 1" ></TextBlock>
+                <TextBlock Name="Mass2" Grid.Column="1" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="100g" ></TextBlock>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Name="ProcedureText" Grid.Row="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF7AB309" Text="Sposób wykonania:" ></TextBlock>
+            <TextBlock Name="Procedure" Grid.Row="1" FontSize="24"   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="#FF7AB309" TextWrapping="WrapWholeWords" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus nec nisi eget dictum. Nullam congue mauris felis, in pharetra nunc tempor non. Morbi quis tortor lacus. Donec fermentum ex ac pharetra vulputate. Nam eros libero, facilisis vitae venenatis at, vehicula nec nulla. Curabitur faucibus a enim quis faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla semper tortor id mauris ultrices, et viverra tortor pretium. Aenean ultrices lectus id odio rutrum, non pretium ante cursus. Integer ac justo venenatis, elementum turpis eget, maximus felis. Ut eget arcu auctor, sollicitudin velit a, finibus elit. " ></TextBlock>
 
+        </Grid>
     </Grid>
 </Page>
