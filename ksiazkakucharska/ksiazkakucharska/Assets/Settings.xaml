@@ -20,8 +20,8 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Name="ButtonChangeNick" Grid.Row="1" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień nick"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
-            <Button Name="ButtonChangePassword" Grid.Row="2" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień hasło"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Click="ButtonChangeNick_Click" Name="ButtonChangeNick" Grid.Row="1" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień nick"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+            <Button Click="ButtonChangePassword_Click" Name="ButtonChangePassword" Grid.Row="2" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień hasło"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
             <Button Click="ButtonEmail_Click" Name="ButtonEmail" Grid.Row="3" BorderBrush="#FF215E21" Background="#FF7AB309" Foreground="#FF215E21" Content="Zmień email"  HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
         </Grid>
         <Grid Grid.Row="1" x:Name="ButtonsRow2">

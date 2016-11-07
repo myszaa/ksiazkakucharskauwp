@@ -58,8 +58,10 @@
         <Grid Grid.Row="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="8*"></ColumnDefinition>
+                <ColumnDefinition Width="8*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Content="Zmień" Name="LoginButton" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF7AB309" Foreground="#FFC8E888"></Button>
+            <Button Click ="Back_Click" Content="Powrót" Name="Back" Grid.Column="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF7AB309" Foreground="#FFC8E888"></Button>
+            <Button Content="Zmień" Name="LoginButton" Grid.Column="1" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF7AB309" Foreground="#FFC8E888"></Button>
         </Grid>
 
     </Grid>

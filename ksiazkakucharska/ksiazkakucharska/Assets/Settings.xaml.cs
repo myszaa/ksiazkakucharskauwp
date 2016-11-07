@@ -41,5 +41,15 @@ namespace ksiazkakucharska.Assets
         {
             Frame.Navigate(typeof(ChangeEmail));
         }
+
+        private void ButtonChangeNick_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ChangeNick));
+        }
+
+        private void ButtonChangePassword_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ChangePassword));
+        }
     }
 }
