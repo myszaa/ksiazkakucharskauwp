@@ -97,6 +97,9 @@
     </Compile>
     <Compile Include="Assets\Add.xaml.cs" />
     <Compile Include="Assets\Find.xaml.cs" />
+    <Compile Include="Assets\RecipeDetails.xaml.cs">
+      <DependentUpon>RecipeDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
     <Page Include="Assets\Find.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\RecipeDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
