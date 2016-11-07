@@ -50,5 +50,11 @@ namespace ksiazkakucharska
             ContentFrame.Navigate(typeof(Assets.Login));
             HamburgerMenu.IsPaneOpen = false;
         }
+
+        private void RecipeDetailsStackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(Assets.RecipeDetails));
+            HamburgerMenu.IsPaneOpen = false;
+        }
     }
 }
